@@ -8,7 +8,6 @@ body {
     width: 70%;
     margin: 0 auto;
     overflow: hidden;
-
 }
 
 .planet-area {
@@ -28,4 +27,72 @@ body {
     left: 27em;
     height: 15em;
     transform: rotate(35deg);
+}
+
+.control-panel {
+    background:
+            linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+            linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+            linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+            linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+            linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+            linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+    position: relative;
+    width: 30em;
+    bottom: 35em;
+    left: 50em;
+    text-align: center;
+    border-radius: 0.3em;
+    padding: 0.2em;
+}
+
+.control-panel__inner {
+    border-radius: 0.3em;
+    background-color: rgba(30, 28, 30);
+    margin: 0.5em;
+    padding: 1em;
+}
+
+.check-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.levers {
+    display: flex;
+    height: 7em;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=range] {
+    width: 6em;
+    transform: rotate(-90deg);
+}
+
+input[type=checkbox] {
+    margin: 2em;
+}
+
+input[type=password] {
+    border-radius: 0.3em;
+    border: solid #0075ff 0.1em;
+}
+
+input[value=OK] {
+    background-color: #0075ff;
+    border-radius: 0.3em;
+}
+
+input[value=Launch] {
+    background-color: #ff3925;
+    border-radius: 5em;
+    border-color: white;
+    height: 4em;
+    width: 7em;
+    font-weight: bold;
+    font-size: 100%;
 }
