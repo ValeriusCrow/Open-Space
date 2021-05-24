@@ -14,15 +14,20 @@ okButton.addEventListener("click", function unlock () {
     }
 });
 
-
-for (let i = 0; i <= rangesChecks.length; i++) {
+for (let i = 0; i < rangesChecks.length; i++) {
     rangesChecks[i].addEventListener("click", function check() {
+        this.setAttribute('value', this.value);
         let checkedChecks = document.querySelectorAll('input[type="checkbox"]:checked');
-        let rangesFull = document.querySelectorAll('input[type="range"], input[value="100"]');
-        if (checkedChecks.length === 6) {
+        let rangesFull = document.querySelectorAll('input[type="range"][value="100"]');
+        if (checkedChecks.length === 6 && rangesFull.length === 5) {
             launchButton.removeAttribute("disabled");
         } else {
             launchButton.setAttribute("disabled", "");
         }
     });
 }
+
+
+    launchButton.addEventListener("click", function fly () {
+    let rocketModel = document.querySelector(".rocket");
+
