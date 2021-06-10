@@ -1,39 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Open Space</title>
-    <link href="style.css" rel="stylesheet">
-    <script async src="script.js"></script>
+    <title>Главная — Venom 2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<div class="space">
-    <div class="planet-area">
-        <img class="planet" src="mars.png">
-        <img class="rocket" src="rocket.png">
-    </div>
-    <div class="control-panel">
-        <div class="control-panel__inner">
-            <input type="password" placeholder="Enter your password, pls">
-            <input type="button" value="OK">
-            <div class="check-buttons">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-            </div>
-            <div class="levers">
-                <input type="range">
-                <input type="range">
-                <input type="range">
-                <input type="range">
-                <input type="range">
-            </div>
-            <input type="button" value="Launch">
+<body class="blood">
+    <div class="container">
+            <header class="header">
+        <a href="/" class="logo-link">
+            <img src="img/logo.png" alt="logo: venom" class="logo-image">
+        </a>
+        <nav class="nav">
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="about.html" class="nav-menu-link">о фильме</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="trailer.html" class="nav-menu-link">трейлер</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="actors.html" class="nav-menu-link">актеры</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="premier.html" class="nav-menu-link">премьера</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="film">
+        <div class="film-text">
+            <span class="film-date">16 сентября 2021</span>
+            <img src="img/venom-2.svg" alt="logo: venom-2" class="film-logo">
+            <p class="film-description">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.</p>
         </div>
+        <!-- /.film-text -->
+        <div class="button-group">
+            <button class="button button-primary">
+                <img src="img/play.svg" alt="icon: play" class="button-icon">
+                <span class="button-text">смотреть трейлер</span>
+            </button>
+            <a href="trailer.html" class="button button-link">
+                <img src="img/ticket.svg" alt="icon: ticket" class="button-icon">
+                <span class="button-text">билеты на премьеру</span>
+            </a>
+        </div>
+        <!-- /.button-group -->
     </div>
-</div>
+    <!-- /.hero -->
+    </div>
+    </div>
+    <img src="img/venom.png" alt="photo: venom" class="venom">
 </body>
 </html>
